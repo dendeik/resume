@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px; 
+    font-weight: normal;
+    letter-spacing: 100;
+    word-spacing: 100;
+    background: rgba(240, 234, 234, 0.338)
+}
+.info {
+    font-style:italic;
+    font-weight: normal;
+    color:#111;
+    display: flex;
+}
+.info-text{
+    margin-left: 20px;
+}
+.card-1 {
+    border-width: 2px;
+    border-style: dashed;
+    border-color:rgb(43, 32, 196);
+    background-color: azure;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+#card2 {
+    border-width: 2px;
+    border-style: dashed;
+    border-color:rgb(167, 199, 27);
+    background-color: rgb(110, 148, 15);
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.container {
+    max-width: 750px;
+    margin:auto;
+    margin-bottom: 20px;
+    padding: 30px 20px 30px 20px;
+  }
+.avatar{
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0,0,0,25);
+}
+a {
+    color:#000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color:blue;
+}
+a:visited {
+    color:rgba(33, 30, 129, 0.317);
+}
+.btn {
+    background:#111;
+    padding: 15px 20 px;
+    color: white;
+    border: none; 
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.links{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14 px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 2px;
+    }
+.card-1 ol li {
+    padding: 0px 10px;
+    margin: 10px;
+    font-style: normal;
+    padding-left: 0px;
+}
+.card-1 li:nth-child(even) {
+color: rgb(173, 14, 14);
+}
+.form h2{
+    background: red;
+    text-align: center;
+}
+.from-group label {
+    font-size: 18px;
+    color: #dc252e;
+}
+.from-group input, 
+.from-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: red;
+    font-size: 29;
+    padding: 15px 0px 10px;
+    font-family: inherit;
+   }
+ .name_email{
+    margin-bottom: 10px;
+
+ } 
+ .name_email .from-group {
+    display: inline-block;
+    width: calc(50% - 20px);
+    
+ }
+.name_email .from-group:last-child{
+    margin-right: 0px;
+}

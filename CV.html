@@ -7,28 +7,41 @@
     <title>My CV</title>
     <meta name="Describtion" content="My first website">
     <meta name="keywords" content="HTML, CSS, first steps">
-  
-</head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 <body>
-<img src="CVmy picture.png" width="130" alt="Данил Ковальчук фото">
- <h1><strong>Данил Ковальчук</strong></h1>
-<hr>
- <p> Я учу <strong>HTML</strong> и <strong>CSS</strong> чтобы стать Front-End разработчиком</p>
-<br>
-Я люблю <em>путешествовать</em>, <em>улиток</em> и <em>природу.</em>
- </p>
+<div class="container">
+<div class="info">
+    <img src="CVmy picture.png" class="avatar" alt="Данил Ковальчук фото">
+    <div class="info-text">
+        <h1><strong>Данил Ковальчук</strong></h1>
+        <p> Я учу <strong>HTML</strong> и <strong>CSS</strong> чтобы стать Front-End разработчиком</p>
+        <br>
+        Я люблю <em>путешествовать</em>, <em>улиток</em> и <em>природу.</em>
+        </p>
+        <p>  <strong>Мой список социальных сетей </strong> </p>
+        <div class="links">
+            <a href="https://vk.com/dendeik" target="_blank">VK</a> |
+            <a href="https://t.me/dendeik" target="_blank">Telegram</a> 
+        </div>
+    </div>
+
+</div>
+</body>
+
+ <div class="text">
+<div class="card-1" id="card1">
  <h2>Мои хобби</h2>
  <ol>
     <li>Велосипед</li>
     <li>Походы</li>
     <li>Фильмы</li>
     <li>Китайский</li>
+</div>
  </ol>
- <p>  <strong>Мой список социальных сетей </strong> </p>
  
-</body>
-<a href="https://vk.com/dendeik">VK</a> 
 <hr>
+<div class="card-2" id="card2">
 <h3>   Опыт работы </h3>    
 <table>
 <thead>
@@ -51,21 +64,28 @@
 </tr>
 </tbody>
 </table>
-<h2>Связаться со мной</h2>
-<form>
-<div>
-<label for="name">Name:</label>
-<input type="text" id="name" placeholder="введите имя">
 </div>
-<div>
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" placeholder="Введите email">
-       </div>
-<div>
-<label for="message" value="пишите что хотите" readonly>Сообщения</label>
-<br>
-<textarea id="message" cols="25" rows="5" placeholder="Введите сообщение"></textarea> 
-</div>
-<button type="submit">Отправить форму </button>
+
+
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+    <div class="name_email">    
+        <div class="from-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="введите имя">
+        </div>
+
+        <div class="from-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Введите email">
+        </div>
+    </div>    
+    <div class="from-group">
+        <label for="message" value="пишите что хотите" readonly>Сообщения</label>
+        <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение"></textarea> 
+    </div>
+    <button class="btn" type="submit">Отправить форму </button>
+    <input class="btn" type="submit" value="Отправить">
+    
 </form>
 </html>
